@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak Yadav</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*--------------------------- CSS reset ----------------------------------*/
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Karma", serif;
+      }
+      /*------------X--------------- CSS reset --------------X--------------------*/
+      /*--------------------------- Utility Class --------------X--------------------*/
+      .center {
+        text-align: center;
+      }
+      /*------------X--------------- Utility Classt --------------X--------------------*/
+
+      .logo img {
+        border-radius: 100%;
+        width: 70px;
+      }
+
+      /*--------------------------- navigation bar ----------------------------------*/
+
+      #navbar {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        top: 0px;
+      }
+      #navbar ul {
+        display: flex;
+      }
+      #navbar ul li {
+        list-style: none;
+        color: lime;
+        position: sticky;
+      }
+      #navbar ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 2px 20px;
+        margin-right: 30px;
+        /* margin-top: 15px;
+        margin-bottom: 0px;
+        
+        margin-left: 010px; */
+        font-size: 20px;
+        color: rgb(43, 255, 0);
+      }
+      #navbar ul li a:hover {
+        background-color: black;
+        border-radius: 20px;
+      }
+      #navbar::before {
+        content: "";
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      /*---------------X------------ navigation bar ----------------X------------------*/
+
+      /*--------------------------- Home section ----------------------------------*/
+
+      #home {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        height: 547px;
+      }
+      #home::before {
+        content: "";
+        position: absolute;
+        background: url("comp.jpg") no-repeat center center/cover;
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; */
+
+        height: 90%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+      }
+      .maintext {
+        font-size: 30px;
+        color: rgb(131, 158, 157);
+        text-align: center;
+      }
+      .protext {
+        font-size: 30px;
+        color: lime;
+        text-align: center;
+        margin-top: 9px;
+        font-weight: bold;
+      }
+      #home p {
+        font-size: 20px;
+      }
+      /*------------X--------------- Home section -----------------X-----------------*/
+      /*--------------------------- button ----------------------------------*/
+      .btn {
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 5px 20px;
+        font-size: 15px;
+        margin: 50px;
+        background-color: transparent;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      /*------------X--------------- button -----------------X-----------------*/
+      /*--------------------------- project section ----------------------------------*/
+      #box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #project .box {
+        border: 2px solid red;
+        margin: 8px;
+
+        border-radius: 20px;
+        background: gainsboro;
+      }
+      #project .box .proname img {
+        height: 100px;
+        display: block;
+        margin: auto;
+        padding: 7px;
+        /* margin-bottom: 5px; */
+      }
+
+      #project .box .read_more_btn {
+        display: block;
+        margin: auto;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 5px 20px;
+        font-size: 15px;
+        background-color: greenyellow;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      /*----------X----------------- project section ------------------X----------------*/
+      /*--------------------------- Contact us ----------------------------------*/
+      #contact::before {
+        content: "";
+        position: absolute;
+        background: url("contact.jpg") no-repeat center center/cover;
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; */
+
+        height: 50%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+        margin-top: 40px;
+      }
+      #contact .contact-form {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        margin-top: 40px;
+      }
+      #contact .contact-form form {
+        height: 50%;
+        margin-top: 20px;
+      }
+      #contact .contact-form input {
+        width: 40%;
+        height: 30px;
+        margin: 5px;
+        border: 2px solid black;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      #contact .contact-form textarea {
+        width: 40%;
+        height: 50px;
+
+        border: 2px solid black;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      #contact .contact-form button {
+        background-color: white;
+        color: black;
+        font-size: 1.5rem;
+        /* border: 3px solid lime; */
+        border-radius: 20px;
+        padding: 0px 2px;
+        font-weight: bold;
+      }
+      #contact .contact-form button:hover {
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
+        border: 3px solid lime;
+        border-radius: 20px;
+        padding: 0px 2px;
+        cursor: pointer;
+      }
+
+      /*----------X----------------- Contact us ------------------X----------------*/
+      /*--------------------------- about us ----------------------------------*/
+      #about::before {
+        content: "";
+        position: absolute;
+        background: url(about.png) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        margin-top: 45px;
+      }
+      /*----------X----------------- about us ------------------X----------------*/
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <img src="deepak_icon.png" alt="Deepak" />
+      </div>
+      <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Projects</a></li>
+        <li class="item"><a href="#">About us</a></li>
+        <li class="item"><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1 class="maintext">Welcome to MyWebsite.com</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+        eligendi
+      </p>
+      <p>magnam impedit expedita?</p>
+
+      <button class="btn">Projects</button>
+    </section>
+    <section id="project">
+      <h1 class="protext center">My Projects</h1>
+      <div id="box-container">
+        <div class="box">
+          <div class="proname">
+            <img src="project (5).png" alt="project 1" />
+            <h2 class="center">project 1</h2>
+            <p class="about_proj">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, fuga at dolorem alias ducimus quasi? Asperiores ad et
+              debitis qui error perferendis reiciendis consectetur!
+            </p>
+            <button class="read_more_btn">Read more...</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="proname">
+            <img src="project (5).png" alt="project 1" />
+            <h2 class="center">project 2</h2>
+            <p class="about_proj">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, fuga at dolorem alias ducimus quasi? Asperiores ad et
+              debitis qui error perferendis reiciendis consectetur!
+            </p>
+            <button class="read_more_btn">Read more...</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="proname">
+            <img src="project (5).png" alt="project 1" />
+            <h2 class="center">project 3</h2>
+            <p class="about_proj">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, fuga at dolorem alias ducimus quasi? Asperiores ad et
+              debitis qui error perferendis reiciendis consectetur!
+            </p>
+            <button class="read_more_btn">Read more...</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="proname">
+            <img src="project (5).png" alt="project 1" />
+            <h2 class="center">project 4</h2>
+            <p class="about_proj">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, fuga at dolorem alias ducimus quasi? Asperiores ad et
+              debitis qui error perferendis reiciendis consectetur!
+            </p>
+            <button class="read_more_btn">Read more...</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="proname">
+            <img src="project (5).png" alt="project 1" />
+            <h2 class="center">project 5</h2>
+            <p class="about_proj">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, fuga at dolorem alias ducimus quasi? Asperiores ad et
+              debitis qui error perferendis reiciendis consectetur!
+            </p>
+            <button class="read_more_btn">Read more...</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="protext center">Contact us</h1>
+      <div class="contact-form">
+        <form action="noaction.php">
+          Name
+          <input type="text" placeholder="Enter your name" />
+          <br />
+          Email
+          <input type="text" placeholder="Enter your Email id" />
+          <br />
+          Phone
+          <input type="text" placeholder="Enter your mobile no" />
+          <br />
+          Locality
+          <input
+            type="text"
+            placeholder="Enter your nearest railway station name"
+          />
+          <br />
+          Message
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Type your Message"
+          ></textarea>
+          <br />
+          <button class="Submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="protext center">About us</h1>
+
+      <div class="about">
+        Build your website with world's best Developer Team <br />
+      </div>
+    </section>
+  </body>
+</html>
